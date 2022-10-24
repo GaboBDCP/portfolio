@@ -1,0 +1,60 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="About | Gabriel Botana" description="Gabriel Botana as coder, gamer and crossfit amateur" />
+		<style>
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+			}
+
+			.heroImg img {
+				width: 100%;
+			}
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+				margin-top: 4em;
+			}
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>About Gabriel</h1>
+			<div class="heroImg">
+				<img
+					width="1400"
+					height="350"
+					src="/assets/about.jpeg"
+				/>
+			</div>
+			<div class="bio wrapper">
+				<p>
+					I was born in Argentina and I've been living in the Barcelona since 2015. I'm a software developer and I'm passionate about technology, gaming and fitness.
+				</p>
+				<p>
+					I work in Basetis which gave me the posibility to grow as a developer by collaborating in many projects. Currently I'm working as a Technical Lead in the Development team and I'm also the CTO team of the company. 
+				</p>
+				<p>
+					I'm a big fan of the open source community and I've been contributing to many projects. I'm also a member of the <a href="https://www.meetup.com/es-ES/Barcelona-ReactJS-Meetup/" target="_blank">Barcelona ReactJS Meetup</a> and <a href="https://www.meetup.com/es-ES/Barcelona-ReactJS-Meetup/" target="_blank">Barcelona VueJS Meetup</a>.
+				</p>
+				<p>
+					I'm also a big fan of gaming and I've been playing videogames since I was a kid. I'm a big fan of the <a href="https://https://store.steampowered.com/" target="_blank">Valve</a> games and I'm currently playing <a href="https://www.dota2.com/home" target="_blank">Dota 2</a> and indie games.
+				</p>
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
